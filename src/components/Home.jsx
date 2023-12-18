@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import Features from './Features';
 import img from '../assets/teams.jpg';
 import Footer from './Footer';
@@ -37,7 +36,7 @@ const styles = {
     backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    filter: 'brightness(85%)',
+    filter: 'brightness(75%)',
   },
 };
 
@@ -63,15 +62,6 @@ const Home = () => {
           >
             Feel the better connection.
           </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              mt: 3,
-            }}
-          >
-            Read more
-          </Button>
         </Box>
       </Box>
       <Features />
