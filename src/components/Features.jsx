@@ -6,7 +6,6 @@ import TrendingUpTwoToneIcon from '@mui/icons-material/TrendingUpTwoTone';
 import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
 import { useMediaQuery } from '@mui/material';
 
-import Greetings from './Greeting';
 import FeatureBox from './FeatureBox';
 
 
@@ -33,7 +32,6 @@ const Features = () => {
 
   return (
     <>
-    <Greetings />
       <Box sx={{
         display: 'flex',
         justifyContent: 'center',
@@ -71,7 +69,6 @@ const Features = () => {
         ))}
       </Box>
     </>
-    
   )
 }
 

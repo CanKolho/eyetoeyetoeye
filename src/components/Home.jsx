@@ -1,9 +1,11 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+
 import Features from './Features';
-import img from '../assets/teams.jpg';
+import Greetings from './Greeting';
 import Footer from './Footer';
 
+import img from '../assets/teams.jpg';
 //import { styled } from '@mui/material/styles';
 //import { blue } from '@mui/material/colors'; // Added missing imports
 
@@ -21,7 +23,7 @@ import Footer from './Footer';
 const styles = {
   container: {
     position: 'relative',
-    width: '100vw',
+    width: '100%',
     height: '80vh',
     display: 'flex',
     justifyContent: 'center',
@@ -64,6 +66,7 @@ const Home = () => {
           </Typography>
         </Box>
       </Box>
+      <Greetings />
       <Features />
       <Footer />
     </>
