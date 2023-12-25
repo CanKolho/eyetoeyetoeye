@@ -1,4 +1,4 @@
-# React + Vite Setup Instructions
+# EeyToEyeToEye Setup Instructions
 
 This guide will walk you through the steps to set up the React + Vite project on your own computer.
 
@@ -31,7 +31,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 ## Usage
 
-To start the development, run the following command:
+To start the app, run the following command:
 
   ```bash
   npm run dev

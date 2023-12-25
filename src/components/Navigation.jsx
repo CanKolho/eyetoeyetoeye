@@ -1,4 +1,9 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { createRouteMapping, getRoute, languages } from '../utils/utils';
+
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -15,19 +20,58 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-import { Link } from 'react-router-dom'
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Instructions', 'Contact'];
 
 const Navigation = (props) => {
+  const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  /**
+   * Handles the change event of the language select input.
+   * Updates the language state and navigates to the new URL with the language prefix.
+   *
+   * @param {object} event - The change event object.
+   */
+  const handleLangChange = (event) => {
+    const newLang = event.target.value;
+    setLang(newLang);
+
+    const { pathname } = location;
+
+    // URLs are structured like /:lang/some-path
+    const newPath = pathname.split('/').slice(2).join('/'); // Removes the language part
+    const newUrl = `/${newLang}/${newPath}`; // Adds the new language prefix
+
+    navigate(newUrl); // Navigate to the new URL with language prefix
+  };
+
+  /**
+   * Array of navigation items.
+   */
+  const navItems = [t('nav.home'), t('nav.about'), t('nav.instructions'),t('nav.contact')];
+
+  /**
+   * Mapping of routes.
+   *
+   * @type {Object}
+   */
+  const routeMapping = createRouteMapping(t, i18n);
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-
+  
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
@@ -35,8 +79,9 @@ const Navigation = (props) => {
       </Typography>
       <Divider />
       <List>
+
       {navItems.map((item) => (
-          <Link key={item} to={item.toLowerCase() === 'home' ? '/' : item.toLowerCase()} style={{ textDecoration: 'none', color: 'black' }}>
+          <Link key={item} to={getRoute(routeMapping, item)} style={{ textDecoration: 'none', color: 'black' }}>
             <ListItem key={item} disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
                 <ListItemText primary={item} />
@@ -44,6 +89,26 @@ const Navigation = (props) => {
             </ListItem>
           </Link>
         ))}
+
+        {/** FIX ME. Make this with flagimages*/}
+        <ListItem disableGutters sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <FormControl sx={{ width: '30%' }}>
+            <Select
+              value={lang}
+              onChange={handleLangChange}
+            >
+              {languages.map((item, index) => (
+                <MenuItem
+                  key={index}
+                  value={item.code}
+                  onClick={() => i18n.changeLanguage(item.code)}
+                >
+                  {item.code}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </ListItem>
       </List>
     </Box>
   );
@@ -75,14 +140,28 @@ const Navigation = (props) => {
           >
             EyeToEyeToEye
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-          {navItems.map((item) => (
-              <Link key={item} to={item.toLowerCase() === 'home' ? '/' : item.toLowerCase()} style={{ textDecoration: 'none', color: 'black' }}>
-                <Button sx={{ color: 'black' }}>
+          <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
+            {navItems.map((item) => (
+              <Link key={item} to={getRoute(routeMapping, item)} style={{ textDecoration: 'none', color: 'black' }}>
+                <Button sx={{ color: 'black', whiteSpace: 'nowrap' }}>
                   {item}
                 </Button>
               </Link>
             ))}
+
+            {/** FIX ME. Make this with flagimages*/}
+            <FormControl sx={{ width: '20%' }}>
+              <Select
+                value={lang}
+                onChange={handleLangChange}
+              >
+                {languages.map((item, index) => (
+                  <MenuItem key={index} value={item.code} onClick={() => i18n.changeLanguage(item.code)}>
+                    {item.code}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
           </Box>
         </Toolbar>
       </AppBar>

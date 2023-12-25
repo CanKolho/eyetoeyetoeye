@@ -6,6 +6,9 @@ import Greetings from './Greeting';
 import Footer from './Footer';
 
 import img from '../assets/teams.jpg';
+
+import { useTranslation } from 'react-i18next';
+
 //import { styled } from '@mui/material/styles';
 //import { blue } from '@mui/material/colors'; // Added missing imports
 
@@ -43,6 +46,8 @@ const styles = {
 };
 
 const Home = () => {
+  const { t } = useTranslation();
+  
   return (
     <>
       <Box sx={styles.container}>
@@ -62,7 +67,7 @@ const Home = () => {
             variant="h3" 
             sx={{ pt: 0.5, fontSize: '1.5rem' }}
           >
-            Feel the better connection.
+            {t('home.text')}
           </Typography>
         </Box>
       </Box>
@@ -70,7 +75,6 @@ const Home = () => {
       <Features />
       <Footer />
     </>
-
   );
 };
 

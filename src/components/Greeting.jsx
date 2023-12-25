@@ -1,9 +1,13 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Greetings = () => {
+  const { t, i18n } = useTranslation();
+  const currentLangPrefix = `/${i18n.language}`;
+  
   return (
     <Box sx={{
       display: 'flex',
@@ -14,23 +18,23 @@ const Greetings = () => {
       mx: 3
     }}>
       <Typography 
-      wrap="wrap"
-      sx={{ 
-        fontSize: 25, 
-        textAlign: 'center',
-        mx: 10,
-        mb: 4,
-        width: '100%'
-      }}>
-        We make online communication human and authentic by allowing direct eye contact while looking at your screen.
+        wrap="wrap"
+        sx={{ 
+          fontSize: 25, 
+          textAlign: 'center',
+          mx: 10,
+          mb: 4,
+          width: '100%'
+        }}>
+          {t('greeting.text')}
       </Typography>
-      <Link to="/about" style={{ textDecoration: 'none', color: 'white', marginBottom: '1.5rem' }}>
+      <Link to={`${currentLangPrefix}/about`} style={{ textDecoration: 'none', color: 'white', marginBottom: '1.5rem' }}>
         <Button variant="contained" color="primary">
-          About the product
+          {t('greeting.buttonText')}
         </Button>
       </Link>
     </Box>
-  )
-}
+  );
+};
 
 export default Greetings;

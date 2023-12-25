@@ -5,30 +5,32 @@ import PeopleAltTwoToneIcon from '@mui/icons-material/PeopleAltTwoTone';
 import TrendingUpTwoToneIcon from '@mui/icons-material/TrendingUpTwoTone';
 import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
 import { useMediaQuery } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
-import FeatureBox from './FeatureBox';
+import FeatureBox from './FeatureBox';  
 
-
-const features = [
-  {
-    icon: <PeopleAltTwoToneIcon sx={{ fontSize: '2.5rem' }}/>,
-    title: 'Connection',
-    description: 'Stay connected with your friends and loved ones, no matter where they are.',
-  },
-  {
-    icon: <TrendingUpTwoToneIcon sx={{ fontSize: '2.5rem' }} />,
-    title: 'Easy to use',
-    description: 'Experience a user-friendly interface that makes navigation and interaction effortless.',
-  },
-  {
-    icon: <SpeedTwoToneIcon sx={{ fontSize: '2.5rem' }} />,
-    title: 'Fast set up',
-    description: 'Get up and running quickly with our fast and efficient setup process.',
-  },
-]   
 
 const Features = () => { 
+  const { t } = useTranslation();
   const isMobile = useMediaQuery('(max-width: 900px)')
+
+  const features = [
+    {
+      icon: <PeopleAltTwoToneIcon sx={{ fontSize: '2.5rem' }}/>,
+      title: t('features.featureBox1.header'),
+      description: t('features.featureBox1.text'),
+    },
+    {
+      icon: <TrendingUpTwoToneIcon sx={{ fontSize: '2.5rem' }} />,
+      title: t('features.featureBox2.header'),
+      description: t('features.featureBox2.text'),
+    },
+    {
+      icon: <SpeedTwoToneIcon sx={{ fontSize: '2.5rem' }} />,
+      title: t('features.featureBox3.header'),
+      description: t('features.featureBox3.text'),
+    },
+  ]   
 
   return (
     <>
@@ -42,7 +44,7 @@ const Features = () => {
       }}>
         <Box>
           <Typography variant='h5'>
-            Our features
+            {t('features.header')}
           </Typography>
         </Box>
         <Divider sx={{ mt: 2, width: '4rem' }} />  

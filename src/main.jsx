@@ -1,9 +1,13 @@
 import ReactDOM from 'react-dom/client'
+import { Suspense } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
+import './i18n.js'
 import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
-    <App />
+    <Suspense fallback="loading">
+      <App />
+    </Suspense>
   </Router>   
 )

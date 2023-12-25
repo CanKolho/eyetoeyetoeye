@@ -1,7 +1,15 @@
 import '../styles/Footer.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+import { createRouteMapping, getRoute } from '../utils/utils';
+
+/** FIX ME
+ * Pitää muuttaa elementit material ui:ksi 
+ * */
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   const socials = [
     { name: 'facebook', icon: 'fa-brands fa-facebook' },
     { name: 'twitter', icon: 'fa-brands fa-twitter' },
@@ -9,7 +17,9 @@ const Footer = () => {
     { name: 'instagram', icon: 'fa-brands fa-instagram' }
   ]
 
-  const links = ['Home', 'About', 'Instructions', 'Contact']
+  const links = [t('nav.home'), t('nav.about'), t('nav.instructions'),t('nav.contact')]
+
+  const routeMapping = createRouteMapping(t, i18n);
 
   return (
     <footer>
@@ -27,16 +37,16 @@ const Footer = () => {
           <li key={index}>
             <Link 
               key={link} 
-              to={link.toLowerCase() === 'home' ? '/' : link.toLowerCase()}
+              to={getRoute(routeMapping, link)}
             >
               {link}
             </Link>
           </li>
         ))}
       </ul>
-      <p className="legal">© {new Date().getFullYear()} All rights reserved</p>
+      <p className="legal">© {new Date().getFullYear()} {t('footer.text')}</p>
       <p className="legal">
-        Website created by <a href='https://cankolho.github.io/CanKolho-Portfolio/'>Can Kolho</a> 
+        {t('footer.link')} <a href='https://cankolho.github.io/CanKolho-Portfolio/'>Can Kolho</a> 
       </p>
     </footer>
   )

@@ -1,3 +1,6 @@
+import { useField } from '../hooks';
+import { useTranslation } from 'react-i18next';
+
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -5,12 +8,11 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
- 
-import { useField } from '../hooks';
 
 import img from '../assets/natureandlens.jpg'
 
 const ContactForm = () => {
+  const { t } = useTranslation();
 
   const { reset: resetName, ...name } = useField('text')
   const { reset: resetEmail, ...email } = useField('email')
@@ -62,28 +64,27 @@ const ContactForm = () => {
           }}
         >
           <Typography variant="h4" align="center" mb={2}>
-            Contact Us
+            {t('contactForm.header')}
           </Typography>
           <form onSubmit={handleSubmit}>
             <TextField
               {...name}
               fullWidth
-              label="Name"
+              label={t('contactForm.name')}
               margin="normal"
               required
             />
             <TextField
               fullWidth
               {...email}
-              label="Email"
+              label={t('contactForm.email')}
               margin="normal"
               required
-              type="email"
             />
             <TextField
               fullWidth
               {...message}
-              label="Message"
+              label={t('contactForm.message')}
               margin="normal"
               required
               multiline
@@ -98,7 +99,7 @@ const ContactForm = () => {
                 margin: "0 auto",
               }}
             >
-              Send 
+              {t('contactForm.buttonText')}
             </Button>
           </form>
         </Box>
