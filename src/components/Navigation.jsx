@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { createRouteMapping, getRoute, languages } from '../utils/utils';
+import { createRouteMapping, languages } from '../utils/utils';
 
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -81,7 +81,7 @@ const Navigation = (props) => {
       <List>
 
       {navItems.map((item) => (
-          <Link key={item} to={getRoute(routeMapping, item)} style={{ textDecoration: 'none', color: 'black' }}>
+          <Link key={item} to={routeMapping[item]} style={{ textDecoration: 'none', color: 'black' }}>
             <ListItem key={item} disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
                 <ListItemText primary={item} />
@@ -142,7 +142,7 @@ const Navigation = (props) => {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
             {navItems.map((item) => (
-              <Link key={item} to={getRoute(routeMapping, item)} style={{ textDecoration: 'none', color: 'black' }}>
+              <Link key={item} to={routeMapping[item]} style={{ textDecoration: 'none', color: 'black' }}>
                 <Button sx={{ color: 'black', whiteSpace: 'nowrap' }}>
                   {item}
                 </Button>

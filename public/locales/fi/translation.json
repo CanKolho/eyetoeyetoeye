@@ -27,6 +27,10 @@
       "text": "Pääset nopeasti ja tehokkaasti käyntiin nopean asennusprosessimme avulla"
     }
   },
+  "about": {
+    "header": "Meistä",
+    "text": "EyeToEyeToEye on suomalainen startup-yritys, joka on perustettu vuonna 2020. Tavoitteenamme on tehdä online-viestinnästä inhimillistä ja aitoa mahdollistamalla suoran silmäkontaktin näytölläsi. EyeToEyeToEye on helppokäyttöinen ja nopea käyttöönottoinen ratkaisu, joka mahdollistaa yhteydenpidon ystäviin ja läheisiin missä tahansa he ovatkin. EyeToEyeToEye on suunniteltu erityisesti ikäihmisille, mutta se sopii kaikille, jotka haluavat ylläpitää yhteyttä läheisiinsä. EyeToEyeToEye on suunniteltu ja valmistettu Suomessa."
+  },
   "instructions": {
     "header": "Ohjeet",
     "step1": {

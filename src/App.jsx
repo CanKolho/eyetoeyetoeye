@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Routes, Route, useNavigate} from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Home from './components/Home'
+import About from './components/About'
 import Instructions from './components/Instrunctions'
 import ContactForm from './components/contactForm'
 import { useScrollToTop } from "./hooks/index"
@@ -27,6 +28,7 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route path="/:lang" element={<Home />} />
+        <Route path='/:lang/about' element={<About />} />
         <Route path='/:lang/instructions' element={<Instructions />} />
         <Route path='/:lang/contact' element={<ContactForm />} />
       </Routes>

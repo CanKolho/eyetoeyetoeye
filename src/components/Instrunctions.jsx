@@ -36,7 +36,7 @@ const Instructions = () => {
         my: 20,
         mx: isMobile ? 5 : 10,
         }}>
-          <Typography sx={{ fontSize: '2.5rem' }}>
+          <Typography sx={{ fontSize: '3.5rem' }}>
             {t('instructions.header')}
           </Typography>
           <Divider sx={{ width: '75%' }} />

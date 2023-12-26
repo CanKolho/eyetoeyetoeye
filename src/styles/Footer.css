@@ -26,16 +26,17 @@ footer ul {
 .socials li a i {
   color: black;
   font-size: 1.3rem;
-  transition: opacity .2s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .socials li a i:hover {
   opacity: .7;
+  scale: 1.1;
 }
 .links li a {
   color: black;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .legal {

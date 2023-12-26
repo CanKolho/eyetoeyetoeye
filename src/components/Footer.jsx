@@ -1,7 +1,7 @@
 import '../styles/Footer.css'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
-import { createRouteMapping, getRoute } from '../utils/utils';
+import { createRouteMapping } from '../utils/utils';
 
 /** FIX ME
  * Pitää muuttaa elementit material ui:ksi 
@@ -37,7 +37,7 @@ const Footer = () => {
           <li key={index}>
             <Link 
               key={link} 
-              to={getRoute(routeMapping, link)}
+              to={routeMapping[link]}
             >
               {link}
             </Link>

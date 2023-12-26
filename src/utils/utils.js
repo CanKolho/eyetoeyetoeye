@@ -14,17 +14,6 @@ export const createRouteMapping =  (t, i18n) => {
   }
 };
 
-
-/**
- * Retrieves the route from the route mapping based on the given i18n key.
- * @param {Object} routeMapping - The mapping of i18n keys to routes.
- * @param {string} i18nKey - The i18n key for the desired route.
- * @returns {string} The route corresponding to the i18n key.
- */
-export const getRoute = (routeMapping, i18nKey) => {
-  return routeMapping[i18nKey];
-};
-
 /**
  * Array of language objects.
  * @typedef {Object} Language
