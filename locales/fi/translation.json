@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Etusivu",
+    "about": "Meistä",
+    "instructions": "Ohjeet",
+    "contact": "Ota yhteyttä"
+  },
+  "home": {
+    "text": "Tunne parempi yhteys."
+  },
+  "greeting": {
+    "text": "Teemme online-viestinnästä inhimillisen ja aitoa mahdollistamalla suoran silmäkontaktin näytölläsi.",
+    "buttonText": "Lue tuotteesta"
+  },
+  "features": {
+    "header": "Ominaisuudet",
+    "featureBox1": {
+      "header": "Yhteys",
+      "text": "Pysy yhteydessä ystäviisi ja läheisiisi, missä tahansa he ovatkin"
+    },
+    "featureBox2": {
+      "header": "Helppokäyttöisyys",
+      "text": "Koe käyttäjäystävällinen käyttöliittymä, joka tekee navigoinnista ja vuorovaikutuksesta vaivatonta"
+    },
+    "featureBox3": {
+      "header": "Nopea käyttöönotto",
+      "text": "Pääset nopeasti ja tehokkaasti käyntiin nopean asennusprosessimme avulla"
+    }
+  },
+  "about": {
+    "header": "Meistä",
+    "text": "EyeToEyeToEye on suomalainen startup-yritys, joka on perustettu vuonna 2020. Tavoitteenamme on tehdä online-viestinnästä inhimillistä ja aitoa mahdollistamalla suoran silmäkontaktin näytölläsi. EyeToEyeToEye on helppokäyttöinen ja nopea käyttöönottoinen ratkaisu, joka mahdollistaa yhteydenpidon ystäviin ja läheisiin missä tahansa he ovatkin. EyeToEyeToEye on suunniteltu erityisesti ikäihmisille, mutta se sopii kaikille, jotka haluavat ylläpitää yhteyttä läheisiinsä. EyeToEyeToEye on suunniteltu ja valmistettu Suomessa."
+  },
+  "instructions": {
+    "header": "Ohjeet",
+    "step1": {
+      "header": "Vaihe 1",
+      "text": "EyeToEyeToEye -Telepresence – katsekamera kotelossaan."
+    },
+    "step2": {
+      "header": "Vaihe 2",
+      "text": "Kotelo avattuna, kamera kiinnittimineen ja kiinnitysliuska.Kameran kuvauspää nojaa suojaavaa pehmeää päätyä vasten ja kiinnitysliuskan kiinnike kotelon toisessa päässä."
+    },
+    "step3": {
+      "header": "Vaihe 3",
+      "text": "Kiinnitysliuska, kamera ja kotelo (kokoon taitettuna)."
+    },
+    "step4": {
+      "header": "Vaihe 4",
+      "text": "Kiinnitysliuskan ripustus näytön reunaan ennen kiinnikkeen taivuttamista näytön yläreunan ympäri."
+    },
+    "step5": {
+      "header": "Vaihe 5",
+      "text": "Kiinnitysliuskan kiinnike väännetään näytön yläreunan ympäri kiinnitys/käyttöasentoonsa. Varmista että  kiinnitysliuskan ja näytön pinnat ovat puhtaita, eikä niiden pinnassa ole näyttöä  naarmuttavia roskia tai hiekanjyviä !"
+    },
+    "step6": {
+      "header": "Vaihe 6",
+      "text": "Kameran korkeuden  arviointi kiinnitysliuskassa  näytöllä vähän alle puoliväliin alhaalta mitaten. Kamera sijoitetaan liuskan kanssa hieman näytön vasemmalle puoliskolle."
+    },
+    "step7": {
+      "header": "Vaihe 7",
+      "text": "Kameran kiristinrenkaan (jossa EyeToEyeToEye-teksti) kierto myötäpäivään auki-asentoonsa mahdollisimman kauas imukupista"
+    },
+    "step8": {
+      "header": "Vaihe 8",
+      "text": "Kameran imukupin painaminen kiinnitysliuskan pintaan  (lujasti, kiinteää pintaa kuten pöytää vastaan). Kiristinrengas kierretään johto alaspäin lähtien ja linssin päällä oleva numeroteksti vaakasuorassa.`"
+    },
+    "step9": {
+      "header": "Vaihe 9",
+      "text": "Kameran kiristinrengas (valkoinen nuoli) kunnolla kiristettynä heilumattomaksi (kierteitä 2-2,5 uraa näkyvissä), yhdistelmä valmiina ruudulle ripustettavaksi. Irrotus tapahtuu imukupin pienestä kielekkeestä (keltainen nuoli) ulospäin sormilla kevyesti vetäen."
+    },
+    "step10": {
+      "header": "Vaihe 10",
+      "text": "Kamera valmiina ruudun vasemmalla puolella,  vastaanottajan kuva osaikkunassa ja tuotuna kameran viereen, silmät kameran linssin tasalla. Sininen valo kamerassa ilmoittaa sen olevan päällä. Käytössä oleva kamera vaihdetaan tämän ikonin takaa."
+    },
+    "step11": {
+      "header": "Vaihe 11",
+      "text": "Osaikkunan muodostaminen näyttöruutuun. Helposti liikuteltava ja kooltaan säädettävä ”osaikkuna” voidaan avata hiirellä klikaten ikkunan/näytön oikeassa ylänurkassa olevasta ruudusta, viivan ja X välissä. Ottamalla syntyneen osaikkunan yläreunasta kiinni, sitä voidaan siirtää,  ja sivu-tai alareunasta tai ikkunan kulmasta tarttumalla ja venyttämällä sen kokoa voi muuttaa. Osaikkunan yläreunan osuessa näytön yläreunaan automatiikka avaa harmillisesti osaikkunan koko näytön suuruiseksi. Muualle yläreunasta siirtämällä se jälleen pienenee."
+    },
+    "step12": {
+      "header": "Vaihe 12",
+      "text": "Omat kasvot pikkuruudussa (PR) on hyvä tuoda keskustelukuppanin kasvojen viereen, jos mahdollista, kameran (punainen pallo) suhteen toiselle, vastaanottajan  kasvojen oikealle puolelle, kaikki samalle tasalle.Lähettäjän (kameran käyttäjän) on hyvä seurata pikkuruudusta (PR) omien kasvojen sijoittumista pikkuruudun keskelle sopivan kokoisina ja hyvällä korkeudella. Pystysuunnassa omia kasvoja voi myös nostaa/laskea näyttöä eteen/taakse kallistamalla. Etäisyys kameraan määrää kasvojen koon. Omien kasvojen valaistusta on hyvä kuvassa välillä seurata. Mikrofonin voit vaihtaa oikealla alhaalla olevaa kovaäänisen kuvaa hiiren oikealla painikkeella painaen. Valitse ”avaa ääniasetukset” ja valitse tarvittaessa ”1080P PC kamera”. Mikrofonin toimintaa voi tässä myös ikkunassa testata, samoin vaihtaa käytettävää kameraa jos tarpeen."
+    }
+  },
+  "contactForm": {
+    "header": "Ota yhteyttä",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "message": "Viesti",
+    "buttonText": "Lähetä"
+  },
+  "footer": {
+    "text": "Kaikki oikeudet pidetään.",
+    "link": "Verkkosivuston luonut"
+  }
+}

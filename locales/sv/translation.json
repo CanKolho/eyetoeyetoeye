@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Hem",
+    "about": "Om oss",
+    "instructions": "Instruktioner",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "text": "Känn den bättre anslutningen."
+  },
+  "greeting": {
+    "text": "Vi gör online-kommunikation mänsklig och autentisk genom att möjliggöra direkt ögonkontakt medan du tittar på din skärm.",
+    "buttonText": "Om produkten"
+  },
+  "features": {
+    "header": "Våra funktioner",
+    "featureBox1": {
+      "header": "Anslutning",
+      "text": "Håll kontakten med dina vänner och nära och kära, oavsett var de befinner sig."
+    },
+    "featureBox2": {
+      "header": "Användarvänlighet",
+      "text": "Upplev en användarvänlig gränssnitt som gör navigering och interaktion enkel."
+    },
+    "featureBox3": {
+      "header": "Snabb installation",
+      "text": "Kom igång snabbt och effektivt med vår snabba och effektiva installationsprocess."
+    }
+  },
+  "about": {
+    "header": "Om oss",
+    "text": "EyeToEyeToEye Telepresence är en produkt som gör det möjligt för människor att kommunicera med varandra på ett mer mänskligt sätt. Detta uppnås genom att möjliggöra direkt ögonkontakt medan du tittar på din skärm. EyeToEyeToEye Telepresence är en produkt som gör det möjligt för människor att kommunicera med varandra på ett mer mänskligt sätt. Detta uppnås genom att möjliggöra direkt ögonkontakt medan du tittar på din skärm. EyeToEyeToEye Telepresence är en produkt som gör det möjligt för människor att kommunicera med varandra på ett mer mänskligt sätt. Detta uppnås genom att möjliggöra direkt ögonkontakt medan du tittar på din skärm."
+  },
+  "instructions": {
+    "header": "Instruktioner",
+    "step1": {
+      "header": "Steg 1",
+      "text": "EyeToEyeToEye Telepresence – ögonkamera i sitt fodral."
+    },
+    "step2": {
+      "header": "Steg 2",
+      "text": "Fodralet öppnat, kamera med dess fäste och monteringsremsa. Kamerans linsdel vilar mot ett skyddande mjukt slut, och monteringsremsans fäste är i fodralets andra ände."
+    },
+    "step3": {
+      "header": "Steg 3",
+      "text": "Monteringsremsa, kamera och fodral (ihopvikt)."
+    },
+    "step4": {
+      "header": "Steg 4",
+      "text": "Hänga monteringsremsan på skärmens kant innan fästet böjs över skärmens övre kant."
+    },
+    "step5": {
+      "header": "Steg 5",
+      "text": "Monteringsremsans fäste vrids över skärmens övre kant till dess monterings/driftposition. Se till att ytan på monteringsremsan och skärmen är rena och fria från skräp eller sandkorn som kan repa skärmen!"
+    },
+    "step6": {
+      "header": "Steg 6",
+      "text": "Uppskatta kamerans höjd på monteringsremsan på skärmen, mäter lite mindre än halvvägs upp från botten. Kameran placeras med remsan något till vänster om skärmens mitt."
+    },
+    "step7": {
+      "header": "Steg 7",
+      "text": "Vrida kamerans åtdragningsring (med EyeToEyeToEye-text) medurs till sitt öppna läge så långt borta från sugkoppen som möjligt."
+    },
+    "step8": {
+      "header": "Steg 8",
+      "text": "Trycka fast kamerans sugkopp mot ytan på monteringsremsan (kraftigt, mot en fast yta som ett bord). Åtdragningsringen vrids med sladden nedåt, med start från linsen, och texten med siffror ovanpå linsen i vågrätt läge."
+    },
+    "step9": {
+      "header": "Steg 9",
+      "text": "Kamerans åtdragningsring (vit pil) är ordentligt åtdragen för att vara orörlig (med 2-2,5 gängor synliga), kombinationen redo att hängas på skärmen. Avlägsnande görs genom att försiktigt dra utåt på den lilla fliken på sugkoppen (gul pil) med fingrarna."
+    },
+    "step10": {
+      "header": "Steg 10",
+      "text": "Kameran redo på skärmens vänstra sida, mottagarens bild i ett litet fönster och fört bredvid kameran, ögon på kamerans linsnivå. Ett blått ljus på kameran indikerar att den är påslagen. Kameran i bruk kan ändras från denna ikon."
+    },
+    "step11": {
+      "header": "Steg 11",
+      "text": "Skapa ett litet fönster på skärmen. Ett lättförflyttbart och storleksjusterbart 'litet fönster' kan öppnas genom att klicka på rutan i övre högra hörnet av fönstret/skärmen, mellan linjen och X. Genom att ta tag i toppen av det framträdande lilla fönstret, kan det flyttas, och genom att ta tag och sträcka ut från sidan eller underkanten eller hörnet av fönstret, kan dess storlek ändras. Om den övre kanten av det lilla fönstret når skärmens övre kant, öppnas det automatiskt till skärmens fulla storlek. Flytta det från någon annanstans längs den övre kanten kommer att göra det mindre igen."
+    },
+    "step12": {
+      "header": "Steg 12",
+      "text": "Det är bra att föra ditt eget ansikte i det lilla skärmen (PR) bredvid samtalspartnerns ansikte, om möjligt, på motsatt sida av kameran (röd boll), till höger sida av mottagarens ansikte, alla på samma nivå. Avsändaren (kameraanvändaren) bör följa i det lilla skärmen (PR) placeringen av sitt eget ansikte i mitten av det lilla skärmen, lämpligt storleksanpassat och på en bra höjd. Vertikalt kan man också höja/sänka sitt eget ansikte genom att luta skärmen framåt/bakåt. Avståndet till kameran bestämmer ansiktets storlek. Det är bra att ibland följa belysningen av ditt eget ansikte i bilden. Du kan byta mikrofon genom att högerklicka på högtalarbilden längst ner till höger. Välj 'öppna ljudinställningar' och välj '1080P PC-kamera' om nödvändigt. Mikrofonens funktion kan också testas i detta fönster, liksom byta den kamera som används vid behov."
+    }
+  },
+  "contactForm": {
+    "header": "Kontakta oss",
+    "name": "Namn",
+    "email": "E-post",
+    "message": "Meddelande",
+    "buttonText": "Skicka"
+  },
+  "footer": {
+    "text": "Alla rättigheter förbehållna.",
+    "link": "webbplats skapad av"
+  }
+}

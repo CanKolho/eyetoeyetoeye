@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "instructions": "Instructions",
+    "contact": "Contact"
+  },
+  "home": {
+    "text": "Feel the better connection."
+  },
+  "greeting": {
+    "text": "We make online communication human and authentic by allowing direct eye contact while looking at your screen.",
+    "buttonText": "About the product"
+  },
+  "features": {
+    "header": "Our features",
+    "featureBox1": {
+      "header": "Connection",
+      "text": "Stay connected with your friends and loved ones, no matter where they are."
+    },
+    "featureBox2": {
+      "header": "Ease of use",
+      "text": "Experience a user-friendly interface that makes navigation and interaction effortless."
+    },
+    "featureBox3": {
+      "header": "Fast set up",
+      "text": "Get up and running quickly with our fast and efficient setup process."
+    }
+  },
+  "about": {
+    "header": "About us",
+    "text": "EyeToEyeToEye Telepresence is a camera that allows you to look directly at the screen while talking to your friends and loved ones. The camera is attached to the top of the screen and the image is displayed on the screen in a small window. The camera is attached to the screen with a suction cup and can be easily removed and reattached. The camera is connected to the computer via a USB cable. The camera is equipped with a microphone and a blue light that indicates that the camera is on. The camera is compatible with Windows and Mac operating systems. The camera is manufactured in Finland."
+  },
+  "instructions": {
+    "header": "Instructions",
+    "step1": {
+      "header": "Step 1",
+      "text": "EyeToEyeToEye Telepresence – gaze camera in its case."
+    },
+    "step2": {
+      "header": "Step 2",
+      "text": "Case opened, camera with its mount and mounting strip. The camera's lens head rests against a protective soft end, and the mounting strip's bracket is at the other end of the case."
+    },
+    "step3": {
+      "header": "Step 3",
+      "text": "Mounting strip, camera, and case (folded together)."
+    },
+    "step4": {
+      "header": "Step 4",
+      "text": "Hanging the mounting strip on the edge of the screen before bending the bracket over the top edge of the screen."
+    },
+    "step5": {
+      "header": "Step 5",
+      "text": "The mounting strip's bracket is twisted over the top edge of the screen into its mounting/operating position. Ensure that the surfaces of the mounting strip and screen are clean and free from any debris or sand grains that could scratch the screen!"
+    },
+    "step6": {
+      "header": "Step 6",
+      "text": "Estimating the camera's height on the mounting strip on the screen, measuring a little less than halfway up from the bottom. The camera is positioned with the strip slightly to the left side of the screen."
+    },
+    "step7": {
+      "header": "Step 7",
+      "text": "Turning the camera's tightening ring (with EyeToEyeToEye text) clockwise to its open position as far away from the suction cup as possible."
+    },
+    "step8": {
+      "header": "Step 8",
+      "text": "Pressing the camera's suction cup onto the surface of the mounting strip (firmly, against a solid surface like a table). The tightening ring is turned with the cord downwards, starting from the lens, and the text with numbers on top of the lens in a horizontal position."
+    },
+    "step9": {
+      "header": "Step 9",
+      "text": "The camera's tightening ring (white arrow) is properly tightened to be immovable (with 2-2.5 threads visible), the combination ready to be hung on the screen. Detachment is done by gently pulling outwards on the small tab of the suction cup (yellow arrow) with fingers."
+    },
+    "step10": {
+      "header": "Step 10",
+      "text": "The camera ready on the left side of the screen, the recipient's image in a small window and brought next to the camera, eyes at the level of the camera lens. A blue light on the camera indicates it is on. The camera in use can be changed from this icon."
+    },
+    "step11": {
+      "header": "Step 11",
+      "text": "Creating a small window on the screen. An easily movable and resizable 'small window' can be opened by clicking on the square in the top right corner of the window/screen, between the line and X. By grabbing the top of the emerged small window, it can be moved, and by grabbing and stretching from the side or bottom edge or the corner of the window, its size can be changed. If the top edge of the small window reaches the top of the screen, it automatically opens to the full size of the screen. Moving it from elsewhere along the top edge will make it smaller again."
+    },
+    "step12": {
+      "header": "Step 12",
+      "text": "It's good to bring your own face in the small screen (PR) next to the face of the conversation partner, if possible, on the opposite side of the camera (red ball), to the right side of the recipient's face, all at the same level. The sender (camera user) should follow in the small screen (PR) the placement of their own face in the center of the small screen, appropriately sized and at a good height. Vertically, one can also raise/lower their own face by tilting the screen forward/backward. The distance to the camera determines the size of the face. It's good to occasionally follow the lighting of your own face in the picture. You can change the microphone by right-clicking on the loudspeaker image at the bottom right. Choose 'open sound settings' and select '1080P PC camera' if necessary. The operation of the microphone can also be tested in this window, as well as change the camera in use if needed."
+    }
+  },
+  "contactForm": {
+    "header": "Contact us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "buttonText": "Send"
+  },
+  "footer": {
+    "text": "All rights reserved.",
+    "link": "Website created by"
+  }
+}
