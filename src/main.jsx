@@ -1,6 +1,9 @@
 import ReactDOM from 'react-dom/client'
 import { Suspense } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+//import { BrowserRouter as Router } from 'react-router-dom'
+
+// Using HashRouter instead of BrowserRouter to support GitHub Pages
+import { HashRouter as Router } from 'react-router-dom'
 import './i18n.js'
 import App from './App.jsx'
 

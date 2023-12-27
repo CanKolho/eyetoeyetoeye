@@ -1,4 +1,4 @@
-# EeyToEyeToEye Setup Instructions
+# EyeToEyeToEye Setup Instructions
 
 This guide will walk you through the steps to set up the React + Vite project on your own computer.
 
@@ -36,3 +36,7 @@ To start the app, run the following command:
   ```bash
   npm run dev
   ```
+
+# Live Demo
+
+Visit the live website [EyeToEyeToEye](https://cankolho.github.io/eyetoeyetoeye/#/fi)
