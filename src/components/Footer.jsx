@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { createRouteMapping } from '../utils/utils';
 
+import { Reveal } from './motion/Reveal';
+
 /** FIX ME
  * Pitää muuttaa elementit material ui:ksi 
  * */
@@ -25,29 +27,38 @@ const Footer = () => {
     <footer>
       <ul className="socials">
         {socials.map((social, index) => (
-          <li key={index}>
-            <a href='#'>
-              <i className={social.icon}></i>
-            </a>
-          </li>
+           <Reveal>
+              <li key={index}>
+                <a href='#'>
+                  <i className={social.icon}></i>
+                </a>
+              </li>
+            </Reveal>
         ))}
       </ul>
       <ul className="links">
         {links.map((link, index) => (
-          <li key={index}>
-            <Link 
-              key={link} 
-              to={routeMapping[link]}
-            >
-              {link}
-            </Link>
-          </li>
+          <Reveal>
+            <li key={index}>
+              <Link 
+                key={link} 
+                to={routeMapping[link]}
+              >
+                {link}
+              </Link>
+            </li>
+          </Reveal>
         ))}
       </ul>
-      <p className="legal">© {new Date().getFullYear()} {t('footer.text')}</p>
-      <p className="legal">
+      <Reveal>
+        <p className="legal">© {new Date().getFullYear()} {t('footer.text')}</p>
+      </Reveal>
+      <Reveal>
+        <p className="legal">
         {t('footer.link')} <a href='https://cankolho.github.io/CanKolho-Portfolio/'>Can Kolho</a> 
       </p>
+      </Reveal>
+      
     </footer>
   )
 }

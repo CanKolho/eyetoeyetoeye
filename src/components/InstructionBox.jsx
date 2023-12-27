@@ -4,6 +4,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
+import { Reveal } from './motion/Reveal';
+
 const scrollbarStyles = {
   '&::-webkit-scrollbar': {
     width: '8px',
@@ -18,22 +20,24 @@ const scrollbarStyles = {
 
 const InstructionBox = ({ img, header, text }) => {
   return (
-    <Card sx={{ maxWidth: 345, height: 450, overflow: 'auto', ...scrollbarStyles }}>
-      <CardMedia
-        sx={{ height: 200 }}
-        image={img}
-        title={header}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {header}
-          <Divider sx={{ mt: 0.5, mb: 3, width: '4.5rem' }} />
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {text}
-        </Typography>
-      </CardContent>
-    </Card>
+    <Reveal>
+      <Card sx={{ maxWidth: 345, height: 450, overflow: 'auto', ...scrollbarStyles }}>
+        <CardMedia
+          sx={{ height: 200 }}
+          image={img}
+          title={header}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {header}
+            <Divider sx={{ mt: 0.5, mb: 3, width: '4.5rem' }} />
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {text}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Reveal>
   );
 }
 

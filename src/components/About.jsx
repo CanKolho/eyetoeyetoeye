@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { Reveal } from './motion/Reveal';
 
 import AboutBlock from './AboutBlock';
 
@@ -47,11 +48,14 @@ const About = () => {
         mx: isMobile ? 5 : 10,
         }}>
 
-          <Typography sx={{ fontSize: '3.5rem' }}>
-            {t('about.header')}
-          </Typography>
-
-          <Divider sx={{ width: '75%' }} />
+          <Reveal>
+            <Typography sx={{ fontSize: '3.5rem' }}>
+              {t('about.header')}
+            </Typography>
+        
+            <Divider sx={{ width: '100%' }} />
+          </Reveal>
+          
 
           {blocks.map((block, index) => 
             <AboutBlock key={index} {...block} />

@@ -7,6 +7,7 @@ import Footer from './Footer';
 
 import img from '../assets/teams.jpg';
 
+import { Reveal } from './motion/Reveal';
 import { useTranslation } from 'react-i18next';
 
 //import { styled } from '@mui/material/styles';
@@ -27,7 +28,7 @@ const styles = {
   container: {
     position: 'relative',
     width: '100%',
-    height: '80vh',
+    height: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -57,18 +58,22 @@ const Home = () => {
           textAlign: 'center',
           color: 'white'
         }}>
-          <Typography 
-            variant="h5" 
-            sx={{ fontSize: '3rem' }}
-          >
-            EyeToEyeToEye
-          </Typography>
-          <Typography 
-            variant="h3" 
-            sx={{ pt: 0.5, fontSize: '1.5rem' }}
-          >
-            {t('home.text')}
-          </Typography>
+          <Reveal>
+            <Typography 
+              variant="h5" 
+              sx={{ fontSize: '3rem' }}
+            >
+              EyeToEyeToEye
+            </Typography>
+          </Reveal>
+          <Reveal>
+            <Typography 
+              variant="h3" 
+              sx={{ pt: 0.5, fontSize: '1.5rem' }}
+            >
+              {t('home.text')}
+            </Typography>
+          </Reveal>
         </Box>
       </Box>
       <Greetings />

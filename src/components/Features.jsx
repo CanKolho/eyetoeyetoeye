@@ -6,7 +6,7 @@ import TrendingUpTwoToneIcon from '@mui/icons-material/TrendingUpTwoTone';
 import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
 import { useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-
+import { Reveal } from './motion/Reveal';
 import FeatureBox from './FeatureBox';  
 
 
@@ -34,21 +34,23 @@ const Features = () => {
 
   return (
     <>
-      <Box sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-        mt: 10,
-        mb: 7,
-      }}>
-        <Box>
-          <Typography variant='h5'>
-            {t('features.header')}
-          </Typography>
+      <Reveal>
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+          mt: 10,
+          mb: 7,
+          }}>
+          <Box>
+            <Typography variant='h5'>
+              {t('features.header')}
+            </Typography>
+          </Box>
+          <Divider sx={{ mt: 2, width: '4rem' }} />  
         </Box>
-        <Divider sx={{ mt: 2, width: '4rem' }} />  
-      </Box>
+      </Reveal>
       <Box
         sx={{
           display: 'flex',

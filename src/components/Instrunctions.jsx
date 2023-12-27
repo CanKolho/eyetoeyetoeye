@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { Reveal } from './motion/Reveal';
 
 import InstructionBox from './InstructionBox';
 
@@ -36,29 +37,33 @@ const Instructions = () => {
         my: 20,
         mx: isMobile ? 5 : 10,
         }}>
+
+        <Reveal>
           <Typography sx={{ fontSize: '3.5rem' }}>
             {t('instructions.header')}
           </Typography>
-          <Divider sx={{ width: '75%' }} />
-          <Box sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            flexDirection: isMobile ? 'column' : 'row',
-            gap: '5rem',
-            mx: isMobile ? 5 : 10,
-            mt: 12
-            }}>
-            {instructions.map((obj, index) => (
-              <InstructionBox 
-                img={obj.img}
-                header={obj.header}
-                text={obj.text}
-                key={index}
-              />
-            ))}
-          </Box>
+          <Divider sx={{ width: '100%' }} />
+        </Reveal>
+          
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          flexDirection: isMobile ? 'column' : 'row',
+          gap: '5rem',
+          mx: isMobile ? 5 : 10,
+          mt: 12
+          }}>
+          {instructions.map((obj, index) => (
+            <InstructionBox 
+              img={obj.img}
+              header={obj.header}
+              text={obj.text}
+              key={index}
+            />
+          ))}
+        </Box>
       </Box>
     </>   
   )

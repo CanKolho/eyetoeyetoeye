@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import { Reveal } from './motion/Reveal';
+
 const Greetings = () => {
   const { t, i18n } = useTranslation();
   const currentLangPrefix = `/${i18n.language}`;
@@ -16,23 +18,27 @@ const Greetings = () => {
       flexDirection: 'column',
       my: 10,
       mx: 3
-    }}>
-      <Typography 
-        wrap="wrap"
-        sx={{ 
-          fontSize: 25, 
-          textAlign: 'center',
-          mx: 10,
-          mb: 4,
-          width: '100%'
-        }}>
-          {t('greeting.text')}
-      </Typography>
-      <Link to={`${currentLangPrefix}/about`} style={{ textDecoration: 'none', color: 'white', marginBottom: '1.5rem' }}>
-        <Button variant="contained" color="primary">
-          {t('greeting.buttonText')}
-        </Button>
-      </Link>
+      }}>
+        
+      <Reveal>
+        <Typography 
+          wrap="wrap"
+          sx={{ 
+            fontSize: 25, 
+            textAlign: 'center',
+            mb: 4,
+            width: '100%'
+          }}>
+            {t('greeting.text')}
+          </Typography>
+      </Reveal>
+      <Reveal>
+        <Link to={`${currentLangPrefix}/about`} style={{ textDecoration: 'none', color: 'white', marginBottom: '1.5rem' }}>
+          <Button variant="contained" color="primary">
+            {t('greeting.buttonText')}
+          </Button>
+        </Link> 
+      </Reveal>
     </Box>
   );
 };
