@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { createRouteMapping, languages } from '../utils/utils';
 
+import { Reveal } from './motion/Reveal';
+
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -131,8 +133,11 @@ const Navigation = (props) => {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' }, color: 'black' }}
           >
-            <MenuIcon />
+            <Reveal direction='downb'>
+              <MenuIcon />
+            </Reveal>
           </IconButton>
+
           <Typography
             variant="h6"
             component="div"

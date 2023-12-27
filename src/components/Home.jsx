@@ -66,7 +66,7 @@ const Home = () => {
               EyeToEyeToEye
             </Typography>
           </Reveal>
-          <Reveal>
+          <Reveal index={1}>
             <Typography 
               variant="h3" 
               sx={{ pt: 0.5, fontSize: '1.5rem' }}

@@ -1,21 +1,23 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const variants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
-
 /**
  * Reveal component that animates its children when it comes into view.
  * @param {Object} props - The component props.
  * @returns {JSX.Element} - The rendered component.
  */
-export const Reveal = (props) => {
+export const Reveal = ({ children, index = 0, direction = 'up' }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   const controls = useAnimation();
+
+  // Determine the y-value based on the direction
+  const yValue = direction === "up" ? 40 : -40;
+
+  const variants = {
+    hidden: { opacity: 0, y: yValue },
+    visible: { opacity: 1, y: 0 },
+  };
 
   useEffect(() => {
     if (isInView) {
@@ -29,7 +31,7 @@ export const Reveal = (props) => {
         variants={variants}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: index * 0.15 }} // Use index for delay
         style={{ 
           display: 'flex', 
           justifyContent: 'center', 
@@ -37,7 +39,7 @@ export const Reveal = (props) => {
           flexDirection: 'column' 
         }}
       >
-        {props.children}
+        {children}
       </motion.div>
     </div>
   );

@@ -27,27 +27,27 @@ const Footer = () => {
     <footer>
       <ul className="socials">
         {socials.map((social, index) => (
-           <Reveal>
-              <li key={index}>
+            <li key={index}>
+              <Reveal index={index} direction='down'>
                 <a href='#'>
                   <i className={social.icon}></i>
                 </a>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
         ))}
       </ul>
       <ul className="links">
         {links.map((link, index) => (
-          <Reveal>
             <li key={index}>
-              <Link 
-                key={link} 
-                to={routeMapping[link]}
-              >
-                {link}
-              </Link>
+              <Reveal index={index+1} direction='down'>
+                <Link 
+                  key={link} 
+                  to={routeMapping[link]}
+                >
+                  {link}
+                </Link>
+              </Reveal>
             </li>
-          </Reveal>
         ))}
       </ul>
       <Reveal>
