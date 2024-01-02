@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import img from '../assets/natureandlens.jpg'
+import img from '../assets/team2.avif'
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -97,6 +97,12 @@ const ContactForm = () => {
                 mt: 2,
                 display: "block",
                 margin: "0 auto",
+                backgroundColor: 'rgb(237, 205, 187)', 
+                color: 'black', 
+                transition: 'all 0.3s ease-in-out',
+                  '&:hover': {
+                    backgroundColor: 'rgb(227, 183, 160)',
+                  }
               }}
             >
               {t('contactForm.buttonText')}

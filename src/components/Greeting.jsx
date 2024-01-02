@@ -34,8 +34,18 @@ const Greetings = () => {
       </Reveal>
       <Reveal>
         <Link to={`${currentLangPrefix}/about`} style={{ textDecoration: 'none', color: 'white', marginBottom: '1.5rem' }}>
-          <Button variant="contained" color="primary">
-            {t('greeting.buttonText')}
+          <Button 
+            variant="contained" 
+            color="primary" 
+            sx={{ 
+              backgroundColor: 'rgb(237, 205, 187)', 
+              color: 'black', 
+              transition: 'all 0.3s ease-in-out',
+                '&:hover': {
+                  backgroundColor: 'rgb(227, 183, 160)',
+                },
+            }}>
+              {t('greeting.buttonText')}
           </Button>
         </Link> 
       </Reveal>

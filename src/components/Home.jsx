@@ -5,24 +5,10 @@ import Features from './Features';
 import Greetings from './Greeting';
 import Footer from './Footer';
 
-import img from '../assets/teams.jpg';
+import img from '../assets/woman2.avif';
 
 import { Reveal } from './motion/Reveal';
 import { useTranslation } from 'react-i18next';
-
-//import { styled } from '@mui/material/styles';
-//import { blue } from '@mui/material/colors'; // Added missing imports
-
-/**
- * If you want to use your own theme in button, you can use the following code:
- * 
- * const ColorButton = styled(Button)(({ theme }) => ({
-   color: theme.palette.getContrastText(blue[300]),
-   backgroundColor: blue[300],
-   '&:hover': {
-     backgroundColor: blue[400],
-   },
-*/
 
 const styles = {
   container: {
@@ -42,7 +28,7 @@ const styles = {
     backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    filter: 'brightness(75%)',
+    /*filter: 'brightness(75%)',*/
   },
 };
 

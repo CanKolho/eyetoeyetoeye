@@ -4,7 +4,7 @@ import Navigation from './components/Navigation'
 import Home from './components/Home'
 import About from './components/About'
 import Instructions from './components/Instrunctions'
-import ContactForm from './components/contactForm'
+import ContactForm from './components/ContactForm'
 import { useScrollToTop } from "./hooks/index"
 import { useTranslation } from 'react-i18next';
 import '@fontsource/roboto/300.css';

@@ -122,7 +122,7 @@ const Navigation = (props) => {
       <CssBaseline />
       <AppBar component="nav" 
       sx={{
-        backgroundColor: 'rgba(207, 216, 220, 0.5)',
+        backgroundColor: 'rgb(234, 219, 200)',
         backdropFilter: "blur(100px)",
         }}>
         <Toolbar>

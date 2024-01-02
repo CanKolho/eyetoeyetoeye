@@ -11,7 +11,7 @@ const FeatureBox = ({ icon, title, description }) => {
           alignItems: 'center',
           flexDirection: 'column',
           width: '100%',
-          backgroundColor: '#fafafa',
+          backgroundColor: 'rgb(254, 252, 243)',
           padding: '2rem',
           maxWidth: '400px',
           borderRadius: '1rem',
