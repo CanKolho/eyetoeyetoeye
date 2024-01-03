@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-import img from '../assets/team2.avif'
+import img from '../assets/contact.jpg'
 
 const ContactForm = () => {
   const { t } = useTranslation();

@@ -5,7 +5,7 @@ import Features from './Features';
 import Greetings from './Greeting';
 import Footer from './Footer';
 
-import img from '../assets/woman2.avif';
+import img from '../assets/home.jpg';
 
 import { Reveal } from './motion/Reveal';
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,7 @@ const styles = {
     backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    /*filter: 'brightness(75%)',*/
+    filter: 'brightness(75%)',
   },
 };
 

@@ -7,9 +7,9 @@ import { Reveal } from './motion/Reveal';
 
 import AboutBlock from './AboutBlock';
 
-import img from '../assets/vision.avif';
-import img2 from '../assets/approach.avif';
-import img3 from '../assets/mission.avif';
+import img from '../assets/about1.jpg';
+import img2 from '../assets/about2.jpg';
+import img3 from '../assets/about3.jpg';
 
 const About = () => {
   const { t } = useTranslation()
