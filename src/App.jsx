@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     // Redirect all requests to "/" to "/:lang"
-    if (window.location.pathname === "/") {
+    if (window.location.pathname === "/eyetoeyetoeye") {
       navigate(`/${i18n.language}`);
     }
   }, [i18n.language, navigate]);
