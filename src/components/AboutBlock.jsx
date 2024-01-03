@@ -24,7 +24,12 @@ const AboutBlock = ({ header, text, imgSrc, imgRight }) => {
           {!imgRight &&
             <Box sx={{ flex: 1 }}>
               <Reveal>
-              <img src={imgSrc} alt="placeholder" style={imgStyle}/> </Reveal>
+                <img 
+                  src={imgSrc} 
+                  alt="placeholder"
+                  loading="lazy"
+                  style={imgStyle}/> 
+              </Reveal>
             </Box>
           }
             
@@ -56,7 +61,11 @@ const AboutBlock = ({ header, text, imgSrc, imgRight }) => {
           {imgRight && 
             <Box sx={{ flex: 1 }}>
               <Reveal>
-                <img src={imgSrc} alt="placeholder" style={imgStyle}/>
+                <img 
+                src={imgSrc} 
+                alt="placeholder"
+                loading="lazy" 
+                style={imgStyle}/>
               </Reveal>
             </Box>
           }

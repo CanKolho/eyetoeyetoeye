@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -31,11 +31,16 @@ const drawerWidth = 240;
 
 const Navigation = (props) => {
   const { t, i18n } = useTranslation();
-  const [lang, setLang] = useState(i18n.language);
+  const [lang, setLang] = useState('');
 
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(() => {
+    setLang(i18n.language);
+  }, [i18n.language]);
+
+  
   /**
    * Handles the change event of the language select input.
    * Updates the language state and navigates to the new URL with the language prefix.
@@ -44,7 +49,8 @@ const Navigation = (props) => {
    */
   const handleLangChange = (event) => {
     const newLang = event.target.value;
-    setLang(newLang);
+    //The language change is taken care of by the i18n library and useEffect hook
+    //setLang(newLang);
 
     const { pathname } = location;
 
