@@ -20,11 +20,15 @@
     },
     "featureBox2": {
       "header": "Ease of use",
-      "text": "Experience a user-friendly interface that makes navigation and interaction effortless."
+      "text": "Experience a user-friendly interface that makes interaction effortless."
     },
     "featureBox3": {
       "header": "Fast set up",
       "text": "Get up and running quickly with our fast and efficient setup process."
+    },
+    "featureBox4": {
+      "header": "Compatibility",
+      "text": "Suitable for all video conferencing applications"
     }
   },
   "about": {
