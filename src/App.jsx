@@ -9,7 +9,6 @@ import { useScrollToTop } from "./hooks/index"
 import { useTranslation } from 'react-i18next';
 import '@fontsource/roboto/300.css';
 
-
 const App = () => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
@@ -18,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     // Redirect all requests to "/" to "/:lang"
-    if (window.location.pathname === "/eyetoeyetoeye") {
+    if (window.location.pathname === "/") {
       navigate(`/${i18n.language}`);
     }
   }, [i18n.language, navigate]);

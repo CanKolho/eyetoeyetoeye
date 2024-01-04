@@ -8,6 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    supportedLngs: ['fi', 'en', 'sv'],
     fallbackLng: ["fi", "en", "sv"],
 
     debug: true,
@@ -15,7 +16,7 @@ i18n
       escapeValue: false // react already safes from xss
     },
     backend: {
-      loadPath: '/eyetoeyetoeye/locales/{{lng}}/translation.json'
+      loadPath: '/locales/{{lng}}/translation.json'
   }
   });
 
