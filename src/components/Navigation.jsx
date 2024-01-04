@@ -98,7 +98,6 @@ const Navigation = (props) => {
           </Link>
         ))}
 
-        {/** FIX ME. Make this with flagimages*/}
         <ListItem disableGutters sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <FormControl sx={{ width: '30%' }}>
             <Select
@@ -160,7 +159,6 @@ const Navigation = (props) => {
               </Link>
             ))}
 
-            {/** FIX ME. Make this with flagimages*/}
             <FormControl sx={{ width: '20%' }}>
               <Select
                 value={lang}
