@@ -20,11 +20,15 @@
     },
     "featureBox2": {
       "header": "Användarvänlighet",
-      "text": "Upplev en användarvänlig gränssnitt som gör navigering och interaktion enkel."
+      "text": "Upplev en användarvänlig gränssnitt som gör interaktion enkel."
     },
     "featureBox3": {
       "header": "Snabb installation",
       "text": "Kom igång snabbt och effektivt med vår snabba och effektiva installationsprocess."
+    },
+    "featureBox4": {
+      "header": "Förenlighet",
+      "text": "Lämplig för användning i alla videokonferensapplikationer"
     }
   },
   "about": {

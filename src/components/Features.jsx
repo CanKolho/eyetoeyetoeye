@@ -4,6 +4,7 @@ import Divider from '@mui/material/Divider';
 import PeopleAltTwoToneIcon from '@mui/icons-material/PeopleAltTwoTone';
 import TrendingUpTwoToneIcon from '@mui/icons-material/TrendingUpTwoTone';
 import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import { useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Reveal } from './motion/Reveal';
@@ -30,6 +31,11 @@ const Features = () => {
       title: t('features.featureBox3.header'),
       description: t('features.featureBox3.text'),
     },
+    {
+      icon: <CheckCircleOutlineIcon sx={{ fontSize: '2.5rem' }} />,
+      title: t('features.featureBox4.header'),
+      description: t('features.featureBox4.text'),
+    }
   ]   
 
   return (
@@ -56,6 +62,7 @@ const Features = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          flexWrap: 'wrap',
           flexDirection: isMobile ? 'column' : 'row',
           gap: '5rem',
           mb: 10,
