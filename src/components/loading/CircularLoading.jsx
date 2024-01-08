@@ -9,7 +9,7 @@ const CircularLoading = () => {
       alignItems: 'center',
       height: '100vh',
       }}>
-        <CircularProgress color="secondary" />
+        <CircularProgress color="success" />
     </Box>
   )
 }

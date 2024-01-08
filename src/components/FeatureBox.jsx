@@ -1,8 +1,11 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { useTheme } from '@emotion/react';
 import { Reveal } from './motion/Reveal';
 
 const FeatureBox = ({ icon, title, description }) => {
+  const theme = useTheme();
+
   return (
       <Reveal>
         <Box sx={{
@@ -11,7 +14,7 @@ const FeatureBox = ({ icon, title, description }) => {
           alignItems: 'center',
           flexDirection: 'column',
           width: '100%',
-          backgroundColor: 'rgb(254, 252, 243)',
+          backgroundColor: theme.palette.secondary.light,
           padding: '2rem',
           maxWidth: '400px',
           borderRadius: '1rem',

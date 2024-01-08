@@ -3,12 +3,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-
+import { useTheme } from '@emotion/react';
 import { Reveal } from './motion/Reveal';
 
 const Greetings = () => {
   const { t, i18n } = useTranslation();
   const currentLangPrefix = `/${i18n.language}`;
+
+  const theme = useTheme();
   
   return (
     <Box sx={{
@@ -35,14 +37,13 @@ const Greetings = () => {
       <Reveal>
         <Link to={`${currentLangPrefix}/about`} style={{ textDecoration: 'none', color: 'white', marginBottom: '1.5rem' }}>
           <Button 
-            variant="contained" 
-            color="primary" 
+            variant="contained"  
             sx={{ 
-              backgroundColor: 'rgb(237, 205, 187)', 
+              backgroundColor: theme.palette.secondary.medium, 
               color: 'black', 
               transition: 'all 0.3s ease-in-out',
                 '&:hover': {
-                  backgroundColor: 'rgb(227, 183, 160)',
+                  backgroundColor: theme.palette.secondary.dark,
                 },
             }}>
               {t('greeting.buttonText')}

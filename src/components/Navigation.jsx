@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { createRouteMapping, languages } from '../utils/utils';
 
+import { useTheme } from '@emotion/react';
+
 import { Reveal } from './motion/Reveal';
 
 import PropTypes from 'prop-types';
@@ -32,6 +34,7 @@ const drawerWidth = 240;
 const Navigation = (props) => {
   const { t, i18n } = useTranslation();
   const [lang, setLang] = useState('');
+  const theme = useTheme();
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -127,7 +130,7 @@ const Navigation = (props) => {
       <CssBaseline />
       <AppBar component="nav" 
       sx={{
-        backgroundColor: 'rgb(234, 219, 200)',
+        backgroundColor: theme.palette.primary.light,
         backdropFilter: "blur(100px)",
         }}>
         <Toolbar>
@@ -138,7 +141,7 @@ const Navigation = (props) => {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' }, color: 'black' }}
           >
-            <Reveal direction='downb'>
+            <Reveal direction='down'>
               <MenuIcon />
             </Reveal>
           </IconButton>

@@ -9,10 +9,13 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
+import { useTheme } from '@emotion/react';
+
 import img from '../assets/contact.jpg'
 
 const ContactForm = () => {
   const { t } = useTranslation();
+  const theme = useTheme();
 
   const { reset: resetName, ...name } = useField('text')
   const { reset: resetEmail, ...email } = useField('email')
@@ -97,11 +100,11 @@ const ContactForm = () => {
                 mt: 2,
                 display: "block",
                 margin: "0 auto",
-                backgroundColor: 'rgb(237, 205, 187)', 
+                backgroundColor: theme.palette.secondary.medium, 
                 color: 'black', 
                 transition: 'all 0.3s ease-in-out',
                   '&:hover': {
-                    backgroundColor: 'rgb(227, 183, 160)',
+                    backgroundColor: theme.palette.secondary.dark,
                   }
               }}
             >
