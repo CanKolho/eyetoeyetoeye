@@ -39,4 +39,4 @@ To start the app, run the following command:
 
 # Live Demo
 
-Visit the live website [EyeToEyeToEye](https://cankolho.github.io/eyetoeyetoeye/#/fi)
+Visit the live website [EyeToEyeToEye](https://cankolho.github.io/eyetoeyetoeye/fi)

@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   
   // This line is for production
-  base: '/'
+  //base: '/'
 
   // This line is for gh-pages development
-  //base: 'https://cankolho.github.io/eyetoeyetoeye'
+  base: 'https://cankolho.github.io/eyetoeyetoeye'
 })

@@ -16,7 +16,11 @@ i18n
       escapeValue: false // react already safes from xss
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json'
+      //for gh-pages development
+      loadPath: '/eyetoeyetoeye/locales/{{lng}}/translation.json'
+
+      //for production
+      //loadPath: '/locales/{{lng}}/translation.json'
   }
   });
 

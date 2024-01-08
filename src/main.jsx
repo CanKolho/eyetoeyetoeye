@@ -12,7 +12,7 @@ import './i18n.js'
 import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
+  <Router basename='eyetoeyetoeye'>
     <Suspense fallback={ <CircularLoading /> }>
       <ThemeProvider theme={ theme }>
         <App />
