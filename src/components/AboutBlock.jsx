@@ -4,6 +4,8 @@ import Divider from '@mui/material/Divider';
 import { useMediaQuery } from '@mui/material';
 import { Reveal } from './motion/Reveal';
 
+import MyImage from './lazyLoad/MyImage';
+
 const imgStyle = { width: '100%', height: '100%', borderRadius: '.5rem' }
 
 const AboutBlock = ({ header, text, imgSrc, imgRight }) => {
@@ -24,11 +26,12 @@ const AboutBlock = ({ header, text, imgSrc, imgRight }) => {
           {!imgRight &&
             <Box sx={{ flex: 1 }}>
               <Reveal>
-                <img 
-                  src={imgSrc} 
-                  alt="placeholder"
-                  loading="lazy"
-                  style={imgStyle}/> 
+                <MyImage image={{ 
+                  src: imgSrc, 
+                  alt: 'placeholder', 
+                  style: imgStyle 
+                  }} 
+                />
               </Reveal>
             </Box>
           }
@@ -61,11 +64,12 @@ const AboutBlock = ({ header, text, imgSrc, imgRight }) => {
           {imgRight && 
             <Box sx={{ flex: 1 }}>
               <Reveal>
-                <img 
-                src={imgSrc} 
-                alt="placeholder"
-                loading="lazy" 
-                style={imgStyle}/>
+                <MyImage image={{ 
+                  src: imgSrc, 
+                  alt: 'placeholder', 
+                  style: imgStyle 
+                  }} 
+                />
               </Reveal>
             </Box>
           }
